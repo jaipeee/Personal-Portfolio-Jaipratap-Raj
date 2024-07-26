@@ -7,43 +7,121 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="content-wrapper" >
     <header>
         <div class="portfolio-text">Personal Portfolio</div>
         <nav>
-            <ul>
-                <li class="list-mod" ><a href="index.html">Home</a></li>
-                <li class="list-mod" ><a href="about.html">About</a></li>
-                <li class="list-mod" ><a href="projects.html">Projects</a></li>
-                <li class="list-mod" ><a href="certificates.html">Certificates</a></li>
-                <li class="list-mod" ><a href="Experience.html">Experience</a></li>
-                <li class="list-mod" ><a href="contact.html">Contact</a></li>
+            <ul class="nav-list">
+                <li class="list-mod"><a href="index.html">Home</a></li>
+                <li class="list-mod"><a href="about.html">About</a></li>
+                <li class="list-mod"><a href="projects.html">Projects</a></li>
+                <li class="list-mod"><a href="certificates.html">Certificates</a></li>
+                <li class="list-mod"><a href="Experience.html">Experience</a></li>
+                <li class="list-mod"><a href="contact.html">Contact</a></li>
             </ul>
-        </nav> 
+            <button class="nav-toggle" aria-label="Open navigation">
+                <span class="hamburger"></span>
+            </button>
+        </nav>
     </header>
-    <section class="cert-area" >
-        <h1 style="padding: 1.5cap; background-color: aqua; " >My Certificates</h1>
+    <div class="cert-area" >
+        <h1>My Certificates</h1>
+    </div>
+    <div>
+    </div>
+    <section class="certificates">
+        <div class="certificate">
+            <a href="#img1">
+                <img src="certificate/Appreciation_certificate.jpg" alt="Certificate 1">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img2">
+                <img src="certificate/cloud_computing.jpg" alt="Certificate 2">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img3">
+                <img src="certificate/cyber_security.jpg" alt="Certificate 3">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img4">
+                <img src="certificate/fundamentals_cryptography.jpg" alt="Certificate 4">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img5">
+                <img src="certificate/fundamentals_information_security.jpg" alt="Certificate 5">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img6">
+                <img src="certificate/Google_drive_clone.jpg" alt="Certificate 6">
+            </a>
+        </div>
+        <div class="certificate">
+            <a href="#img7">
+                <img src="certificate/Linkedin_learning.jpg" alt="Certificate 7">
+            </a>
+        </div>
     </section>
-    <main>
-        <section class="certificates">
-            <div class="certificate">
-                <img src="images/certificate1.jpg" alt="Certificate 1">
-            </div>
-            <div class="certificate">
-                <img src="images/certificate2.jpg" alt="Certificate 2">
-            </div>
-            <div class="certificate">
-                <img src="images/certificate3.jpg" alt="Certificate 3">
-            </div>
-            <div class="certificate">
-                <img src="images/certificate4.jpg" alt="Certificate 4">
-            </div>
-            <div class="certificate">
-                <img src="images/certificate5.jpg" alt="Certificate 5">
-            </div>
-            <div class="certificate">
-                <img src="images/certificate6.jpg" alt="Certificate 6">
-            </div>
-        </section>
-    </main>
+    
+    <div id="img1" class="lightbox">
+        <a href="#">
+            <img src="certificate/Appreciation_certificate.jpg" alt="Certificate 1">
+        </a>
+    </div>
+    <div id="img2" class="lightbox">
+        <a href="#">
+            <img src="certificate/cloud_computing.jpg" alt="Certificate 2">
+        </a>
+    </div>
+    <div id="img3" class="lightbox">
+        <a href="#">
+            <img src="certificate/cyber_security.jpg" alt="Certificate 3">
+        </a>
+    </div>
+    <div id="img4" class="lightbox">
+        <a href="#">
+            <img src="certificate/fundamentals_cryptography.jpg" alt="Certificate 4">
+        </a>
+    </div>
+    <div id="img5" class="lightbox">
+        <a href="#">
+            <img src="certificate/fundamentals_information_security.jpg" alt="Certificate 5">
+        </a>
+    </div>
+    <div id="img6" class="lightbox">
+        <a href="#">
+            <img src="certificate/Google_drive_clone.jpg" alt="Certificate 6">
+        </a>
+    </div>
+    <div id="img7" class="lightbox">
+        <a href="#">
+            <img src="certificate/Linkedin_learning.jpg" alt="Certificate 7">
+        </a>
+    </div>
+    <footer>
+        <div class="social-tabs">
+            <a href="https://www.instagram.com/jai_raosahab" target="_blank">
+                <img src="image/instagram-logo.png" alt="Instagram"> Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/jairaosahab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="image/linkedin-logo.png" alt="LinkedIn"> LinkedIn
+            </a>
+            <a href="https://github.com/jaipeee" target="_blank">
+                <img src="image/github-logo.png" alt="GitHub"> GitHub
+            </a>
+            <a href="mailto:jaipratapjaipee@gmail.com">
+                <img src="image/email-logo.png" alt="Email"> Email
+            </a>
+            <a href="https://discord.com/users/jai_yadav_" target="_blank">
+                <img src="image/discord-logo.png" alt="Discord"> Discord
+            </a>
+        </div>
+        <p>&copy; 2024 Jaipratap Raj. All Rights Reserved.</p>
+    </footer>
+    
 </body>
 </html>

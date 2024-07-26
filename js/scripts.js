@@ -16,7 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('header').appendChild(navToggle);
 
     navToggle.
-        document.querySelector('nav ul').classList.toggle('show');
+    document.querySelector('nav ul').classList.toggle('show');
+    document.addEventListener('DOMContentLoaded', function() {
+        const navToggle = document.getElementById('navToggle');
+        const navUl = document.querySelector('nav ul');
     });
 
     // Form validation
@@ -44,6 +47,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function validateEmail(email) {
         const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return re.test(String(email).toLowerCase());
-    }
-});
-
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+        const navToggle = document.querySelector('.nav-toggle');
+        const navList = document.querySelector('.nav-list');
+    
+        navToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+    });

@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    background-image: url('../image/website-background.jpg');
+    background-image: url(../image/website-background.jpg);
     background-size: cover;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #000000; /* Dark background color */
@@ -270,7 +270,7 @@ header p {
 }
 
 section {
-    background-image: url(\\image/section-background.jpg);
+    background-image: url(..image/section-background.jpg);
     background-size: cover;
     font-family: 'outfit';
     margin: 20px auto;

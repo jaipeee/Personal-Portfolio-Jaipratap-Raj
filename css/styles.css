@@ -1,5 +1,7 @@
 /* General Styles */
 body {
+    background-image: url(/image/website-background.jpg);
+    background-size: cover;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #000000; /* Dark background color */
     color: #000000; /* Light text color */
@@ -77,7 +79,7 @@ transition: all 0.8s ease-in-out;
     line-height: 1.6;
     color: #0f0853; /* Adjust paragraph text color */
     margin: 10px 0;
-    background-color: ;
+    
 }
 
 .intro .resume-link {
@@ -100,6 +102,8 @@ transition: all 0.8s ease-in-out;
 .social-tabs {
     text-align: center;
     margin: 20px 0;
+    
+    
 }
 
 .social-tabs a {
@@ -121,9 +125,11 @@ footer {
     background-color: #000;
     color: #fff;
     text-align: center;
+    margin: auto;
     padding: 20px 0;
     position: relative;
     clear: both;
+    bottom: 0;
 }
 
 footer p {
@@ -133,7 +139,6 @@ footer p {
 /* Section Styles */
 .about img {
     width: 150px;
-    border-radius: 50%;
     display: block;
     margin: auto;
 }
@@ -152,7 +157,7 @@ footer p {
 
 }
 .projects{
-    margin-top: 7em;
+    margin-top: em;
 }
 
 .projects .project img,
@@ -249,20 +254,9 @@ footer p {
         background-color: rgba(255,255,255,0);
     }
 }
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333333;
-}
 
-header {
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-    animation: fadeIn 2s ease-in-out;
-}
+
+
 
 h1 {
     margin: 0;
@@ -276,7 +270,9 @@ header p {
 }
 
 section {
-    background-color: rgba(186, 38, 38, 0.26);
+    background-image: url(\\image/section-background.jpg);
+    background-size: cover;
+    font-family: 'outfit';
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
@@ -338,6 +334,8 @@ footer {
     color: white;
     margin-top: 20px;
     animation: fadeIn 2s ease-in-out;
+    bottom: 0;
+    width: 100%;
 }
 
 footer a {
@@ -407,8 +405,8 @@ footer a:hover {
     background-image: linear-gradient(
         to right,
         #54b3d6,
-        #bfff00 50%,
-        #f70101 50%);
+        #d7d7d7 50%,
+        #fff700 50%);
       background-size: 200% 100%;
       background-position: -100%;
       -webkit-background-clip: text;
@@ -421,5 +419,124 @@ footer a:hover {
 }
 .cert-area
 {
+    padding-left: 10cap; color: white;
     margin-top: 7em;
+}
+.ex-body{
+    padding-top: 10%; padding-left: 8%;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper  {
+    flex: 1;
+}
+
+
+/* Hamburger menu styles */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+    position: absolute;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
+
+/* Show menu when toggle is active */
+.nav-list.active {
+    display: flex;
+}
+
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.certificate {
+    overflow: hidden;
+    position: relative;
+}
+.certificate img {
+    width: 100%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+.certificate img:hover {
+    transform: scale(1.1);
+}
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+}
+.lightbox:target {
+    display: flex;
 }

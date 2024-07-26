@@ -270,7 +270,7 @@ header p {
 }
 
 section {
-    background-image: url(..image/section-background.jpg);
+    background-image: url(../image/section-background.jpg);
     background-size: cover;
     font-family: 'outfit';
     margin: 20px auto;
